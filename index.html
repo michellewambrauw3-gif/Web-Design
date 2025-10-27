@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran</h2>
+    <Form>
+        <fieldset>
+            <legend>Data Diri</legend>
+        Nama: <input type="text" name="nama" /><br /><br />
+        Email: <input type="email" name="email" /><br /><br />
+
+        Jenis Kelamin: <br /><br />
+        <input type="radio" name="jk" value="laki-laki" />Laki-laki
+        <input type="radio" name="jk" value="Perempuan" />Perempuan  <br /><br />
+
+         Hobi: <br /><br />
+        <input type="checkbox" name="hobi" value="Membaca" />Membaca
+        <input type="checkbox" name="hobi" value="Olahraga" />Olahraga <br /><br />
+
+        Jurusan:
+       <select id="jurusan" name="jurusan">
+       <option value="Informatika">Informatika</option>
+       <option value="sistem-informasi">Sistem Informasi</option>
+       <option value="teknologi informasi">Teknologi Informasi</option>
+       </select> <br /><br />
+
+        Kota Asal:<input type="text" name="kota Asal" /><br /><br />
+
+        Alamat: <br /><br />
+         <textarea name="pesan" rows="4" cols="30" ></textarea><br /><br>
+        </Fieldset>
+
+         <p>  Nilai Kemampuan HTML: <br /><br /> 
+         <meter value="0.6">60%</meter>
+         </p>
+
+         <p>  Progress Pendaftaran: <br /><br /> 
+         <progress value="0.7">70%</progress>
+         </p>
+
+         Contoh Penjumlahan: <br /><br /> 
+         <form oninput="hasil.value=parseInt(angka1.value)+parseInt(angka2.value)">
+         <input type="number" id="angka1" name="angka1" value="10">
+         +
+         <input type="number" id="angka2" name="angka2" value="5">
+         =
+         <output name="hasil" for="angka1 angka2">15</output>
+         <br><br>
+         </form>
+
+         <button type="submit">Kirim</button>
+         <button type="submit">Reset</button>
+        
+
+
+    </Form>
+</body>
+</html>

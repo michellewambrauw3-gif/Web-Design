@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite Sederhana dengan Aimasi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: azure;
+        }
+        header {
+            background-color: green;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(63, 55, 55);
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: rgb(252, 159, 159);
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: antiquewhite;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: rgb(189, 190, 190);
+            
+        }
+        .box {
+            width: 200px;
+            padding: 20px;
+            margin: 30px;
+            background-color: rgb(153, 153, 153);
+    
+        }
+        .box{
+            position: relative;
+            left: 0px;
+            transition: left 2s ease;
+        }
+        .box:hover {
+            left:50px;
+        }
+        footer {
+            background-color: rgb(60, 219, 87);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KELAS WEB DESIGN PROJECT UJIAN MID SEMESTER</h1>
+        <p>Memuat gabungan antara HTML dan CSS</p>
+    </header>
+     <nav><a href="#">Home</a>
+            
+            <a href="#">Tentang</a>
+            <a href="#">Halaman</a>
+            <a href="#">Kontak</a>
+    </nav>
+
+     <div class="container">
+        <div class="content">
+        <h2>Konten Utama</h2>
+        <p>Selamat datang di website untuk belajar Web Design dimana gabungan antara HTML dan CSS.</p><br>
+        <img src="c:\Users\user\Pictures\UNKLAB1.jpg" alt=""><br>
+        <h4>Tabel Data</h4>
+        <table border="1">
+     <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Kontak</th>
+    </tr>
+    <tr>  
+        <td>1</td>
+        <td>Andi</td>
+        <td>Jakarta</td>
+     </tr>
+     <tr>
+        <td>2</td>
+        <td>Budi</td>
+        <td>Bandung</td>
+     </tr>
+     <tr>
+        <td>3</td>
+        <td>Wilsen</td>
+        <td>Manado</td>
+     </tr>
+   </table>
+   <h2>Formulir</h2>
+   <Form>
+        <fieldset>
+            <legend><b>Formulir Pendaftaran</b></legend>
+        Nama: <br><input type="text" name="nama" /><br /><br />
+        Email: <br><input type="email" name="email" /><br /><br />
+
+        Pilih Kota: <br>
+       <select id="kota" name="kota">
+       <option value="Jakarta">Jakarta</option>
+       <option value="Bandung">Bandung</option>
+       <option value="Surabaya">Surabaya</option>
+       </select> <br /><br />
+
+        <input type="checkbox" name="saya setuju dengan syarat & ketentuan" value="setuju" />Saya setuju dengan syarat & ketentuan <br /><br />
+
+       <button type="submit">Kirim</button>
+       
+    </div>
+
+    <div class="sidebar">
+        <div class="box">
+        <h3>Tentang Website</h3>
+        <p>Website ini adalah contoh latihan HTML + CSS responsif sederhana dengan animasi</p><br>
+        <ul>
+            <h4>Menu sidebar</h4>
+            <li> <a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Formulir</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Website Latihan</p>
+    </footer>
+</body>
+</html>

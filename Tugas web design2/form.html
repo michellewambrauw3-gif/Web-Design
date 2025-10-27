@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Workshop</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Peserta Workshop Web Development</h1>
+    <fieldset>
+            <legend>Data Diri</legend>
+        Nama Lengkap: <input type="text" name="nama Lengkap" /><br /><br />
+        Email: <input type="email" name="email" /><br /><br />
+        Usia: <input type="number" name="Usia" /><br /><br />
+        Nomor HP: <input type="tel" name="nomor HP" /><br /><br />
+    </fieldset>
+    <fieldset>
+            <legend>Pilihan Workshop</legend>
+        Jenis Workshop: <br /><br />
+        <input type="radio" name="jw" value="Frontend" />Frontend
+        <input type="radio" name="jw" value="Backend" />Backend
+        <input type="radio" name="jw" value="Fullstack" />Fullstack  <br /><br />
+
+        Hari Keikutsertaan: <br /><br />
+        <input type="checkbox" name="hari Keikutsertaan" value="Hari 1" />Hari 1
+        <input type="checkbox" name="hari Keikutsertaan" value="Hari 2" />Hari 2 
+        <input type="checkbox" name="hari Keikutsertaan" value="Hari 3" />Hari 3 <br /><br />
+
+        Pilih Kota Lokasi: <br /><br />
+        <select id="kota" name="kota">
+        <optgroup label="Jawa">
+        <option value="jakarta">Jakarta</option>
+        <option value="bandung">Bandung</option>
+        <option value="surabaya">Surabaya</option>
+        </optgroup>
+        <optgroup label="Luar Jawa">
+        <option value="medan">Medan</option>
+        <option value="makassar">Makassar</option>
+        <option value="balikpapan">Balikpapan</option>
+        </optgroup>
+        </select><br /><br />
+
+        Alasan Mengikuti Workshop: <br /><br />
+         <textarea name="Alasan" rows="4" cols="30" ></textarea><br /><br>
+
+        Kuota Terisi: <br /><br />
+        <progress value="50">100%</progress> <br /><br />
+
+        Tingkat Penguasaan HTML: <br /><br />
+        <meter value="7">10%</meter> <br /><br />
+
+         <button type="submit">Kirim</button>
+         <button type="submit">Reset</button>
+</body>
+</html>
